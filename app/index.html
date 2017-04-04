@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>angularDemo</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css" />
+	</head>
+	<body ng-app="app">
+		<header>可以自动更新了</header>
+		<h1>现在是{{pageName}}</h1>
+		<ul class="nav nav-pills">
+			<li role="presentation" ui-sref-active="active" ui-sref="index"><a href="#">首页</a></li>
+			<li role="presentation" ui-sref-active="active" ui-sref="module2"><a href="#">第二页</a></li>
+			<li role="presentation" ui-sref-active="active" ui-sref="module3"><a href="#">第三页</a></li>
+			<li role="presentation" ui-sref-active="active" ui-sref="secondBtn"><a href="#">第si页</a></li>
+		</ul>
+		<section data-ui-view="">
+			<!--你的页面将加载在这-->
+		</section>
+	</body>
+	<script src="js/lib.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/business.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
